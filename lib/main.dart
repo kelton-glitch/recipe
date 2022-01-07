@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'recipe.dart';
 
 void main() {
-  runApp(const RecipeApp());
+  runApp(RecipeApp());
 }
 
 class RecipeApp extends StatelessWidget {
@@ -14,11 +14,10 @@ class RecipeApp extends StatelessWidget {
     return MaterialApp(
       title: 'Recipe Calculator',
       theme: ThemeData(
-
-        primaryColor: Colors.white,
-        accentColor: Colors.black
+        appBarTheme: const AppBarTheme(
+            backgroundColor: Colors.white, foregroundColor: Colors.black),
       ),
-      home: const MyHomePage(title: 'Recipe Calculator'),
+      home: MyHomePage(title: 'Recipe Calculator'),
     );
   }
 }
@@ -33,20 +32,20 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-@override
+  @override
   Widget build(BuildContext context) {
-    
     return Scaffold(
       appBar: AppBar(
-        
         title: Text(widget.title),
       ),
       body: SafeArea(
-        
-        child: Column(),
-          
+        child: ListView.builder(
+          itemCount: Recipe.samples.length,
+          itemBuilder: (BuildContext context, int index) {
+            return Text(Recipe.samples[index].label);
+          },
         ),
-      
-          );
+      ),
+    );
   }
 }
