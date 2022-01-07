@@ -1,8 +1,8 @@
 class Recipe {
   String label;
-  String imgeUrl;
+  String imageUrl;
 
-  Recipe(this.label, this.imgeUrl);
+  Recipe(this.label, this.imageUrl);
 
   static List<Recipe> samples = [
     Recipe('Achu', 'images/achu.jpg'),
