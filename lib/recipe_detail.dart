@@ -50,7 +50,7 @@ class _RecipeDetailState extends State<RecipeDetail> {
             Slider(
                 min: 1,
                 max: 10,
-                divisions: 10,
+                divisions: 20,
                 label: '${_sliderVal * widget.recipe.servings} servings',
                 value: _sliderVal.toDouble(),
                 onChanged: (newValue) {

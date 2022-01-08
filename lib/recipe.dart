@@ -13,13 +13,13 @@ class Recipe {
       Ingredient(2, 'kgs', 'towel'),
       Ingredient(2, 'kgs', 'canda'),
     ]),
-    Recipe('Eru', 'images/eru.jpg',3,
+    Recipe('Eru', 'images/eru.jpg',2,
     [
       Ingredient(2, 'kgs', 'meat'),
       Ingredient(2, 'kgs', 'towel'),
       Ingredient(2, 'kgs', 'canda'),
     ]),
-    Recipe('Roasted Fish', 'images/fish.jpg',3,
+    Recipe('Roasted Fish', 'images/fish.jpg',4,
     [
       Ingredient(2, 'kgs', 'meat'),
       Ingredient(2, 'kgs', 'towel'),
