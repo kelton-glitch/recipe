@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'recipe.dart';
 import 'recipe_detail.dart';
 import 'portfolio.dart';
+import 'recipe_theme.dart';
 
 void main() {
   runApp(const RecipeApp());
@@ -37,22 +38,15 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      
       bottomNavigationBar: BottomNavigationBar(
-        selectedItemColor:
-          Theme.of(context).textSelectionTheme.selectionColor,
-
+          selectedItemColor:
+              Theme.of(context).textSelectionTheme.selectionColor,
           items: <BottomNavigationBarItem>[
             const BottomNavigationBarItem(
-              icon: Icon(Icons.home),
-              label: 'Home'),
-
+                icon: Icon(Icons.home), label: 'Home'),
             const BottomNavigationBarItem(
-              icon: Icon(Icons.person),
-              label: 'Portfolio'),
-          ]
-      ),
-
+                icon: Icon(Icons.person), label: 'Portfolio'),
+          ]),
       appBar: AppBar(
         title: Text(widget.title),
       ),
@@ -66,7 +60,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   context,
                   MaterialPageRoute(
                     builder: (context) {
-                      return RecipeDetail( recipe: Recipe.samples[index]);
+                      return RecipeDetail(recipe: Recipe.samples[index]);
                     },
                   ),
                 );
