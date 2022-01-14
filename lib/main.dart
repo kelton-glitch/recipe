@@ -46,11 +46,13 @@ class _MyHomePageState extends State<MyHomePage> {
                 icon: Icon(Icons.home), label: 'Home'),
             const BottomNavigationBarItem(
                 icon: Icon(Icons.person), label: 'Portfolio'),
-          ]),
+          ]
+        ),
       appBar: AppBar(
         title: Text(widget.title),
       ),
       body: SafeArea(
+        
         child: ListView.builder(
           itemCount: Recipe.samples.length,
           itemBuilder: (BuildContext context, int index) {
@@ -74,12 +76,15 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   Widget buildRecipeCard(Recipe recipe) {
-    return Card(
+    return Card( 
+      
       elevation: 2.0,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
       child: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(
+          /* GridView.count( */
+          /*   primary : false, */
           children: <Widget>[
             Image(image: AssetImage(recipe.imageUrl)),
             const SizedBox(
@@ -94,8 +99,8 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
             )
           ],
+          ),
         ),
-      ),
     );
   }
 }
