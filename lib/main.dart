@@ -38,16 +38,16 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      bottomNavigationBar: BottomNavigationBar(
+      /*bottomNavigationBar: BottomNavigationBar(
           selectedItemColor:
               Theme.of(context).textSelectionTheme.selectionColor,
-          items: <BottomNavigationBarItem>[
+           items: <BottomNavigationBarItem>[
             const BottomNavigationBarItem(
                 icon: Icon(Icons.home), label: 'Home'),
             const BottomNavigationBarItem(
                 icon: Icon(Icons.person), label: 'Portfolio'),
           ]
-        ),
+        ), */
       appBar: AppBar(
         title: Text(widget.title),
       ),
