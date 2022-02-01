@@ -42,10 +42,10 @@ class _MyHomePageState extends State<MyHomePage> {
       bottomNavigationBar: BottomNavigationBar(
           selectedItemColor:
               Theme.of(context).textSelectionTheme.selectionColor,
-          items: <BottomNavigationBarItem>[
-            const BottomNavigationBarItem(
+          items: const <BottomNavigationBarItem>[
+            BottomNavigationBarItem(
                 icon: Icon(Icons.home), label: 'Home'),
-            const BottomNavigationBarItem(
+            BottomNavigationBarItem(
                 icon: Icon(Icons.person), label: 'Portfolio'),
           ]),
       appBar: AppBar(
@@ -93,7 +93,7 @@ class _MyHomePageState extends State<MyHomePage> {
               style: const TextStyle(
                 fontSize: 20.0,
                 fontWeight: FontWeight.w700,
-                fontFamily: 'Palatino',
+                fontFamily: 'Palatine',
               ),
             )
           ],
