@@ -46,7 +46,7 @@ class _MyHomePageState extends State<MyHomePage> {
             BottomNavigationBarItem(
                 icon: Icon(Icons.home), label: 'Home'),
             BottomNavigationBarItem(
-                icon: Icon(Icons.person), label: 'Portfolio'),
+                icon: Icon(Icons.person), label: 'About Me'),
           ]),
       appBar: AppBar(
         title: Text(widget.title),
