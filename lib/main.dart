@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'recipe.dart';
 import 'recipe_detail.dart';
-import 'portfolio.dart';
+/* import 'portfolio.dart';
 import 'recipe_theme.dart';
+import 'dart:ui'; */
 
 void main() {
   runApp(const RecipeApp());
@@ -41,18 +42,16 @@ class _MyHomePageState extends State<MyHomePage> {
       bottomNavigationBar: BottomNavigationBar(
           selectedItemColor:
               Theme.of(context).textSelectionTheme.selectionColor,
-           items: <BottomNavigationBarItem>[
+          items: <BottomNavigationBarItem>[
             const BottomNavigationBarItem(
                 icon: Icon(Icons.home), label: 'Home'),
             const BottomNavigationBarItem(
                 icon: Icon(Icons.person), label: 'Portfolio'),
-          ]
-        ), 
+          ]),
       appBar: AppBar(
         title: Text(widget.title),
       ),
       body: SafeArea(
-        
         child: ListView.builder(
           itemCount: Recipe.samples.length,
           itemBuilder: (BuildContext context, int index) {
@@ -76,8 +75,7 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   Widget buildRecipeCard(Recipe recipe) {
-    return Card( 
-      
+    return Card(
       elevation: 2.0,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
       child: Padding(
@@ -99,8 +97,8 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
             )
           ],
-          ),
         ),
+      ),
     );
   }
 }
