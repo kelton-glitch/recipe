@@ -1,2 +1,2 @@
 # recipe
- A little recipe app
+ A detailed recipe app that gives procedure to cook several dishes
