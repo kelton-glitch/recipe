@@ -64,9 +64,8 @@ flutter:
     - images/fish.jpg
     - images/jellof.jpg
     - images/kwacoco.jpg
-    - images/sanga.jpg
-    - images/IMG-20200710-WA0111.jpg
-
+    - images/sanga.jpg 
+    
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
 
