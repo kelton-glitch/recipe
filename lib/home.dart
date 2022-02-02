@@ -1,31 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:recipe/portfolio.dart';
-import 'recipe.dart';
-import 'recipe_detail.dart';
-import 'portfolio.dart';
-/*import 'recipe_theme.dart';
-import 'dart:ui'; */
-
-void main() {
-  runApp(const RecipeApp());
-}
-
-class RecipeApp extends StatelessWidget {
-  const RecipeApp({Key? key}) : super(key: key);
-
-  // This widget is the root of your application.
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Food Menu',
-      theme: ThemeData(
-        appBarTheme: const AppBarTheme(
-            backgroundColor: Colors.white, foregroundColor: Colors.black),
-      ),
-      home: const MyHomePage(title: 'Food Menu'),
-    );
-  }
-}
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({Key? key, required this.title}) : super(key: key);
@@ -37,7 +10,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _selectedIndex = 0;
+ /*  int _selectedIndex = 0;
 
   static List<Widget> pages = <Widget>[
     const MyHomePage(),
@@ -48,12 +21,12 @@ class _MyHomePageState extends State<MyHomePage> {
     setState(() {
       _selectedIndex = index;
     });
-  }
+  } */
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      bottomNavigationBar: BottomNavigationBar(
+       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _selectedIndex,
         onTap: _onItemTapped,
           selectedItemColor:
@@ -62,7 +35,7 @@ class _MyHomePageState extends State<MyHomePage> {
             BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
             BottomNavigationBarItem(
                 icon: Icon(Icons.person), label: 'About Me'),
-          ]),
+          ]), 
       appBar: AppBar(
         title: Text(widget.title),
       ),
