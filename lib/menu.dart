@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:recipe/portfolio.dart';
+/* import 'package:recipe/portfolio.dart';
 import 'recipe.dart';
 import 'recipe_detail.dart';
 import 'portfolio.dart';
-/*import 'recipe_theme.dart';
-import 'dart:ui'; */
+import 'recipe_theme.dart';
+import 'dart:ui';  */
 
 void main() {
   runApp(const RecipeApp());
@@ -36,33 +36,9 @@ class MyHomePage extends StatefulWidget {
   State<MyHomePage> createState() => _MyHomePageState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
-  int _selectedIndex = 0;
-
-  static List<Widget> pages = <Widget>[
-    const MyHomePage(),
-     const Portfolio(),
-  ];
-
-  void _onItemTapped(int index) {
-    setState(() {
-      _selectedIndex = index;
-    });
-  }
-
-  @override
+class _MyHomePageState extends State<MyHomePage> { @override
   Widget build(BuildContext context) {
     return Scaffold(
-      bottomNavigationBar: BottomNavigationBar(
-        currentIndex: _selectedIndex,
-        onTap: _onItemTapped,
-          selectedItemColor:
-              Theme.of(context).textSelectionTheme.selectionColor,
-          items: const <BottomNavigationBarItem>[
-            BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
-            BottomNavigationBarItem(
-                icon: Icon(Icons.person), label: 'About Me'),
-          ]),
       appBar: AppBar(
         title: Text(widget.title),
       ),
