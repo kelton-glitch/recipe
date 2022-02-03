@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
+import 'portfolio.dart';
 
 class MyHomePage extends StatefulWidget {
-  const MyHomePage({Key? key, required this.title}) : super(key: key);
+  const MyHomePage({Key? key}) : super(key: key);
 
-  final String title;
 
   @override
   State<MyHomePage> createState() => _MyHomePageState();
 }
 
 class _MyHomePageState extends State<MyHomePage> {
- /*  int _selectedIndex = 0;
+   int _selectedIndex = 0;
 
   static List<Widget> pages = <Widget>[
     const MyHomePage(),
@@ -21,35 +21,35 @@ class _MyHomePageState extends State<MyHomePage> {
     setState(() {
       _selectedIndex = index;
     });
-  } */
+  } 
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
        
       appBar: AppBar(
-        title: Text(widget.title),
-      ),
-      body:  SafeArea(
-        child: ListView.builder(
-          itemCount: Recipe.samples.length,
-          itemBuilder: (BuildContext context, int index) {
-            return GestureDetector(
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) {
-                      return RecipeDetail(recipe: Recipe.samples[index]);
-                    },
-                  ),
-                );
-              },
-              child: buildRecipeCard(Recipe.samples[index]),
-            );
-          },
-        ),
-      ), 
+        title:  Text('Recipe App',
+        style: Theme.of(context).textTheme.headline6)),
+        
+      body: pages[_selectedIndex],
+
+        bottomNavigationBar: BottomNavigationBar(
+          selectedItemColor: 
+            Theme.of(context).textSelectionTheme.selectionColor,
+
+            currentIndex: _selectedIndex,
+
+            onTap: _onItemTapped,
+          
+          items: const <BottomNavigationBarItem>[
+            BottomNavigationBarItem(
+              icon: Icon(Icons.home),
+              label: 'Home'),
+              BottomNavigationBarItem(
+              icon: Icon(Icons.person),
+              label: 'Portfolio'),
+          ],
+        ),  
     );
   }
   

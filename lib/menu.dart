@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-/* import 'package:recipe/portfolio.dart';
+import 'package:recipe/portfolio.dart';
 import 'recipe.dart';
 import 'recipe_detail.dart';
-import 'portfolio.dart';
+/*import 'portfolio.dart';
 import 'recipe_theme.dart';
 import 'dart:ui';  */
 
@@ -72,8 +72,6 @@ class _MyHomePageState extends State<MyHomePage> { @override
       child: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(
-          /* GridView.count( */
-          /*   primary : false, */
           children: <Widget>[
             Image(image: AssetImage(recipe.imageUrl)),
             const SizedBox(

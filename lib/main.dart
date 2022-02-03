@@ -23,6 +23,7 @@ class RecipeApp extends StatelessWidget {
         appBarTheme: const AppBarTheme(
             backgroundColor: Colors.white, foregroundColor: Colors.black),
       ),
+      home: const MyHomePage(),
       
     );
   }
