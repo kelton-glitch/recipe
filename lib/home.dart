@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'portfolio.dart';
+/* import 'portfolio.dart';
+import 'menu.dart'; */
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({Key? key}) : super(key: key);
@@ -14,7 +15,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   static List<Widget> pages = <Widget>[
     const MyHomePage(),
-     const Portfolio(),
+     Container(color: Colors.green),
   ];
 
   void _onItemTapped(int index) {
