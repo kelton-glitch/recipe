@@ -14,7 +14,7 @@ class RecipeApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Food Menu',
+      title: 'Recipe App',
       theme: ThemeData(
         appBarTheme: const AppBarTheme(
             backgroundColor: Colors.white, foregroundColor: Colors.black),

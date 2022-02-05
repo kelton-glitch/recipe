@@ -6,7 +6,7 @@ import 'recipe_detail.dart';
 import 'recipe_theme.dart';
 import 'dart:ui';  */
 
-void main() {
+/* void main() {
   runApp(const RecipeApp());
 }
 
@@ -17,7 +17,7 @@ class RecipeApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Food Menu',
+      title: 'Reciipe App',
       theme: ThemeData(
         appBarTheme: const AppBarTheme(
             backgroundColor: Colors.white, foregroundColor: Colors.black),
@@ -25,7 +25,7 @@ class RecipeApp extends StatelessWidget {
       home: const MyHomePage(title: 'Food Menu'),
     );
   }
-}
+} */
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({Key? key, required this.title}) : super(key: key);

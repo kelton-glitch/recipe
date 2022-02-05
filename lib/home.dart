@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-/* import 'portfolio.dart';
+/*import 'portfolio.dart';
 import 'menu.dart'; */
 
 class MyHomePage extends StatefulWidget {
@@ -15,7 +15,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   static List<Widget> pages = <Widget>[
     const MyHomePage(),
-     Container(color: Colors.green),
+    /* const Portfolio(), */
   ];
 
   void _onItemTapped(int index) {
@@ -48,7 +48,7 @@ class _MyHomePageState extends State<MyHomePage> {
               label: 'Home'),
               BottomNavigationBarItem(
               icon: Icon(Icons.person),
-              label: 'Portfolio'),
+              label: 'About Me'),
           ],
         ),  
     );
