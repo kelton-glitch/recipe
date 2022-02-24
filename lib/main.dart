@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'home.dart';
 import 'package:flutter/cupertino.dart';
-/*import 'recipe_theme.dart';
-import 'dart:ui'; */
+import 'recipe_theme.dart';
 
 void main() {
   runApp(const RecipeApp());
@@ -14,13 +13,20 @@ class RecipeApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+    final theme = RecipeTheme.dark();
     return MaterialApp(
+      theme: theme,
       title: 'Recipe App',
-      theme: ThemeData(
-        appBarTheme: const AppBarTheme(
-            backgroundColor: Colors.white, foregroundColor: Colors.black),
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('Recipe App',
+          style: theme.textTheme.headline6),
+        ),
+        body: Center(
+          child: Text('Let\'s get cooking ', 
+          style: theme.textTheme.headline1),
+        ),
       ),
-      home: const MyHomePage(),
     );
   }
 }
