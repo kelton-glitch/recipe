@@ -1,21 +1,23 @@
 import 'package:flutter/material.dart';
-/*import 'portfolio.dart';
-import 'menu.dart'; */
+import 'portfolio.dart';
+import 'menu.dart'; 
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({Key? key}) : super(key: key);
+class Home extends StatefulWidget {
+  const Home({Key? key}) : super(key: key);
 
 
   @override
-  State<MyHomePage> createState() => _MyHomePageState();
+  State<Home> createState() => _HomeState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _HomeState extends State<Home> {
    int _selectedIndex = 0;
 
   static List<Widget> pages = <Widget>[
-    const MyHomePage(),
-    /* const Portfolio(), */
+    const Portfolio(),
+    const Menu(title: '',),
+    
+    
   ];
 
   void _onItemTapped(int index) {

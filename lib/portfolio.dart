@@ -20,10 +20,10 @@ class Portfolio extends StatefulWidget {
 
   @override
   State<Portfolio
-> createState() => _MyHomePageState();
+> createState() => _HomeState();
 }
 
-class _MyHomePageState extends State<Portfolio> {
+class _HomeState extends State<Portfolio> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

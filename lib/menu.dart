@@ -22,21 +22,21 @@ class RecipeApp extends StatelessWidget {
         appBarTheme: const AppBarTheme(
             backgroundColor: Colors.white, foregroundColor: Colors.black),
       ),
-      home: const MyHomePage(title: 'Food Menu'),
+      home: const Menu(title: 'Food Menu'),
     );
   }
 } */
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({Key? key, required this.title}) : super(key: key);
+class Menu extends StatefulWidget {
+  const Menu({Key? key, required this.title}) : super(key: key);
 
   final String title;
 
   @override
-  State<MyHomePage> createState() => _MyHomePageState();
+  State<Menu> createState() => _MenuState();
 }
 
-class _MyHomePageState extends State<MyHomePage> { @override
+class _MenuState extends State<Menu> { @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
